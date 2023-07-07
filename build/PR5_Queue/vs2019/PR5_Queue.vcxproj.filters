@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DS_ALG_AI1">
+      <UniqueIdentifier>{898D4EFB-7545-9048-DE4C-69A4CA232B39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DS_ALG_AI1\include">
+      <UniqueIdentifier>{899943CC-757D-0422-DEDD-FE74CAE0EEA3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DS_ALG_AI1\deps">
+      <UniqueIdentifier>{F1CBBA69-5D57-282E-6668-AB22D272842E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DS_ALG_AI1\deps\include">
+      <UniqueIdentifier>{F1BF9B5C-5DF7-E3F3-6601-4817D2B70AED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DS_ALG_AI1\deps\include\ABGS_MemoryManager">
+      <UniqueIdentifier>{BD14F1DF-A97C-B7AD-12E8-CBC3FE6ECE99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DS_ALG_AI1\src">
+      <UniqueIdentifier>{2D95B0F3-1963-A4F9-02F7-1420EE63805E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DS_ALG_AI1\tests">
+      <UniqueIdentifier>{78DF35A2-64D8-54F4-8D0A-3A7979623400}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\DS_ALG_AI1\include\adt_circular_vector.h">
+      <Filter>DS_ALG_AI1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\DS_ALG_AI1\include\adt_dllist.h">
+      <Filter>DS_ALG_AI1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\DS_ALG_AI1\include\adt_list.h">
+      <Filter>DS_ALG_AI1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\DS_ALG_AI1\include\adt_logger.h">
+      <Filter>DS_ALG_AI1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\DS_ALG_AI1\include\adt_memory_node.h">
+      <Filter>DS_ALG_AI1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\DS_ALG_AI1\include\adt_movable_head_vector.h">
+      <Filter>DS_ALG_AI1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\DS_ALG_AI1\include\adt_queue.h">
+      <Filter>DS_ALG_AI1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\DS_ALG_AI1\include\adt_stack.h">
+      <Filter>DS_ALG_AI1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\DS_ALG_AI1\include\adt_vector.h">
+      <Filter>DS_ALG_AI1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\DS_ALG_AI1\deps\include\common_def.h">
+      <Filter>DS_ALG_AI1\deps\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\DS_ALG_AI1\deps\include\ABGS_MemoryManager\abgs_memory_manager.h">
+      <Filter>DS_ALG_AI1\deps\include\ABGS_MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\DS_ALG_AI1\deps\include\ABGS_MemoryManager\abgs_platform_types.h">
+      <Filter>DS_ALG_AI1\deps\include\ABGS_MemoryManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\DS_ALG_AI1\src\adt_memory_node.c">
+      <Filter>DS_ALG_AI1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\DS_ALG_AI1\src\adt_list.c">
+      <Filter>DS_ALG_AI1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\DS_ALG_AI1\src\adt_queue.c">
+      <Filter>DS_ALG_AI1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\DS_ALG_AI1\tests\test_queue.c">
+      <Filter>DS_ALG_AI1\tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
