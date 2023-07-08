@@ -8,26 +8,26 @@
 #include "ABGS_MemoryManager/abgs_memory_manager.h"
 
 //MovableHeadVector Declarations
-static s16 MOVABLE_HEAD_VECTOR_destroy(MovableHeadVector* vector);            //Yossef
-static s16 MOVABLE_HEAD_VECTOR_softReset(MovableHeadVector* vector);          //  "
-static s16 MOVABLE_HEAD_VECTOR_reset(MovableHeadVector* vector);              //  "
-static s16 MOVABLE_HEAD_VECTOR_resize(MovableHeadVector* vector, u16 new_size);//Davide
-static s16 MOVABLE_HEAD_VECTOR_capacity(MovableHeadVector* vector);            // "
-static s16 MOVABLE_HEAD_VECTOR_length(MovableHeadVector* vector);              //  "
-static bool MOVABLE_HEAD_VECTOR_isEmpty(MovableHeadVector* vector);//Terminada
-static bool MOVABLE_HEAD_VECTOR_isFull(MovableHeadVector* vector);//Terminada
-static void* MOVABLE_HEAD_VECTOR_first(MovableHeadVector* vector);//Yossef
-static void* MOVABLE_HEAD_VECTOR_last(MovableHeadVector* vector); //  "
-static void* MOVABLE_HEAD_VECTOR_at(MovableHeadVector* vector, u16 position);   //  "
-static s16 MOVABLE_HEAD_VECTOR_insertFirst(MovableHeadVector* vector, void* data, u16 bytes);           //Yossef
-static s16 MOVABLE_HEAD_VECTOR_insertLast(MovableHeadVector* vector, void* data, u16 bytes);            //  "
-static s16 MOVABLE_HEAD_VECTOR_insertAt(MovableHeadVector* vector, void* data, u16 bytes, u16 position);//  "
-static void* MOVABLE_HEAD_VECTOR_extractFirst(MovableHeadVector* vector);             //Davide
-static void* MOVABLE_HEAD_VECTOR_extractLast(MovableHeadVector* vector);              //  "
-static void* MOVABLE_HEAD_VECTOR_extractAt(MovableHeadVector* vector, u16 position);  //  "
-static s16 MOVABLE_HEAD_VECTOR_concat(MovableHeadVector* vector, MovableHeadVector* vector_src); //  "
-static s16 MOVABLE_HEAD_VECTOR_traverse(MovableHeadVector* vector, void(*callback)(MemoryNode*)); //Yossef
-static void MOVABLE_HEAD_VECTOR_print(MovableHeadVector* vector);//Davide
+static s16 MOVABLE_HEAD_VECTOR_destroy(MovableHeadVector* vector);            
+static s16 MOVABLE_HEAD_VECTOR_softReset(MovableHeadVector* vector);          
+static s16 MOVABLE_HEAD_VECTOR_reset(MovableHeadVector* vector);              
+static s16 MOVABLE_HEAD_VECTOR_resize(MovableHeadVector* vector, u16 new_size)
+static s16 MOVABLE_HEAD_VECTOR_capacity(MovableHeadVector* vector);           
+static s16 MOVABLE_HEAD_VECTOR_length(MovableHeadVector* vector);             
+static bool MOVABLE_HEAD_VECTOR_isEmpty(MovableHeadVector* vector);
+static bool MOVABLE_HEAD_VECTOR_isFull(MovableHeadVector* vector);
+static void* MOVABLE_HEAD_VECTOR_first(MovableHeadVector* vector);
+static void* MOVABLE_HEAD_VECTOR_last(MovableHeadVector* vector); 
+static void* MOVABLE_HEAD_VECTOR_at(MovableHeadVector* vector, u16 position);  
+static s16 MOVABLE_HEAD_VECTOR_insertFirst(MovableHeadVector* vector, void* data, u16 bytes);           
+static s16 MOVABLE_HEAD_VECTOR_insertLast(MovableHeadVector* vector, void* data, u16 bytes);            
+static s16 MOVABLE_HEAD_VECTOR_insertAt(MovableHeadVector* vector, void* data, u16 bytes, u16 position);
+static void* MOVABLE_HEAD_VECTOR_extractFirst(MovableHeadVector* vector);             
+static void* MOVABLE_HEAD_VECTOR_extractLast(MovableHeadVector* vector);              
+static void* MOVABLE_HEAD_VECTOR_extractAt(MovableHeadVector* vector, u16 position);  
+static s16 MOVABLE_HEAD_VECTOR_concat(MovableHeadVector* vector, MovableHeadVector* vector_src); 
+static s16 MOVABLE_HEAD_VECTOR_traverse(MovableHeadVector* vector, void(*callback)(MemoryNode*)); 
+static void MOVABLE_HEAD_VECTOR_print(MovableHeadVector* vector);
 
 struct circular_vector_ops_s vector_ops = { .destroy = MOVABLE_HEAD_VECTOR_destroy,
 								  .softReset = MOVABLE_HEAD_VECTOR_softReset,

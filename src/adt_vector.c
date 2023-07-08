@@ -8,26 +8,26 @@
 #include "ABGS_MemoryManager/abgs_memory_manager.h"
 
 //Vector Declarations
-static s16 VECTOR_destroy(Vector* vector);            //Yossef
-static s16 VECTOR_softReset(Vector* vector);          //  "
-static s16 VECTOR_reset(Vector* vector);              //  "
-static s16 VECTOR_resize(Vector* vector, u16 new_size);//Davide
-static u16 VECTOR_capacity(Vector* vector);            // "
-static u16 VECTOR_length(Vector* vector);              //  "
-static bool VECTOR_isEmpty(Vector* vector);//Terminada
-static bool VECTOR_isFull(Vector* vector);//Terminada
-static void* VECTOR_first(Vector* vector);//Yossef
-static void* VECTOR_last(Vector* vector); //  "
-static void* VECTOR_at(Vector* vector, u16 position);   //  "
-static s16 VECTOR_insertFirst(Vector* vector, void* data, u16 bytes);           //Yossef
-static s16 VECTOR_insertLast(Vector* vector, void* data, u16 bytes);            //  "
-static s16 VECTOR_insertAt(Vector* vector, void* data, u16 bytes, u16 position);//  "
-static void* VECTOR_extractFirst(Vector* vector);             //Davide
-static void* VECTOR_extractLast(Vector* vector);              //  "
-static void* VECTOR_extractAt(Vector* vector, u16 position);  //  "
-static s16 VECTOR_concat(Vector* vector, Vector* vector_src); //  "
-static s16 VECTOR_traverse(Vector* vector, void(*callback)(MemoryNode*)); //Yossef
-static void VECTOR_print(Vector* vector);//Davide
+static s16 VECTOR_destroy(Vector* vector);            
+static s16 VECTOR_softReset(Vector* vector);          
+static s16 VECTOR_reset(Vector* vector);              
+static s16 VECTOR_resize(Vector* vector, u16 new_size)
+static u16 VECTOR_capacity(Vector* vector);           
+static u16 VECTOR_length(Vector* vector);             
+static bool VECTOR_isEmpty(Vector* vector);
+static bool VECTOR_isFull(Vector* vector);
+static void* VECTOR_first(Vector* vector);
+static void* VECTOR_last(Vector* vector); /
+static void* VECTOR_at(Vector* vector, u16 position);  
+static s16 VECTOR_insertFirst(Vector* vector, void* data, u16 bytes);           
+static s16 VECTOR_insertLast(Vector* vector, void* data, u16 bytes);            
+static s16 VECTOR_insertAt(Vector* vector, void* data, u16 bytes, u16 position);
+static void* VECTOR_extractFirst(Vector* vector);             
+static void* VECTOR_extractLast(Vector* vector);              
+static void* VECTOR_extractAt(Vector* vector, u16 position);  
+static s16 VECTOR_concat(Vector* vector, Vector* vector_src); 
+static s16 VECTOR_traverse(Vector* vector, void(*callback)(MemoryNode*)); 
+static void VECTOR_print(Vector* vector);
 
 struct vector_ops_s vector_ops = { .destroy = VECTOR_destroy,
 								  .softReset = VECTOR_softReset,

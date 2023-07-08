@@ -8,26 +8,26 @@
 #include "ABGS_MemoryManager/abgs_memory_manager.h"
 
 //CircularVector Declarations
-static s16 CIRCULAR_VECTOR_destroy(CircularVector* vector);            //Yossef
-static s16 CIRCULAR_VECTOR_softReset(CircularVector* vector);          //  "
-static s16 CIRCULAR_VECTOR_reset(CircularVector* vector);              //  "
-static s16 CIRCULAR_VECTOR_resize(CircularVector* vector, u16 new_size);//Davide
-static s16 CIRCULAR_VECTOR_capacity(CircularVector* vector);            // "
-static s16 CIRCULAR_VECTOR_length(CircularVector* vector);              //  "
-static bool CIRCULAR_VECTOR_isEmpty(CircularVector* vector);//Terminada
-static bool CIRCULAR_VECTOR_isFull(CircularVector* vector);//Terminada
-static void* CIRCULAR_VECTOR_first(CircularVector* vector);//Yossef
-static void* CIRCULAR_VECTOR_last(CircularVector* vector); //  "
-static void* CIRCULAR_VECTOR_at(CircularVector* vector, u16 position);   //  "
-static s16 CIRCULAR_VECTOR_insertFirst(CircularVector* vector, void* data, u16 bytes);           //Yossef
-static s16 CIRCULAR_VECTOR_insertLast(CircularVector* vector, void* data, u16 bytes);            //  "
-static s16 CIRCULAR_VECTOR_insertAt(CircularVector* vector, void* data, u16 bytes, u16 position);//  "
-static void* CIRCULAR_VECTOR_extractFirst(CircularVector* vector);             //Davide
-static void* CIRCULAR_VECTOR_extractLast(CircularVector* vector);              //  "
-static void* CIRCULAR_VECTOR_extractAt(CircularVector* vector, u16 position);  //  "
-static s16 CIRCULAR_VECTOR_concat(CircularVector* vector, CircularVector* vector_src); //  "
-static s16 CIRCULAR_VECTOR_traverse(CircularVector* vector, void(*callback)(MemoryNode*)); //Yossef
-static void CIRCULAR_VECTOR_print(CircularVector* vector);//Davide
+static s16 CIRCULAR_VECTOR_destroy(CircularVector* vector);            
+static s16 CIRCULAR_VECTOR_softReset(CircularVector* vector);          
+static s16 CIRCULAR_VECTOR_reset(CircularVector* vector);              
+static s16 CIRCULAR_VECTOR_resize(CircularVector* vector, u16 new_size)
+static s16 CIRCULAR_VECTOR_capacity(CircularVector* vector);           
+static s16 CIRCULAR_VECTOR_length(CircularVector* vector);             
+static bool CIRCULAR_VECTOR_isEmpty(CircularVector* vector);
+static bool CIRCULAR_VECTOR_isFull(CircularVector* vector);
+static void* CIRCULAR_VECTOR_first(CircularVector* vector);
+static void* CIRCULAR_VECTOR_last(CircularVector* vector); 
+static void* CIRCULAR_VECTOR_at(CircularVector* vector, u16 position);   
+static s16 CIRCULAR_VECTOR_insertFirst(CircularVector* vector, void* data, u16 bytes);           
+static s16 CIRCULAR_VECTOR_insertLast(CircularVector* vector, void* data, u16 bytes);            
+static s16 CIRCULAR_VECTOR_insertAt(CircularVector* vector, void* data, u16 bytes, u16 position);
+static void* CIRCULAR_VECTOR_extractFirst(CircularVector* vector);             
+static void* CIRCULAR_VECTOR_extractLast(CircularVector* vector);              
+static void* CIRCULAR_VECTOR_extractAt(CircularVector* vector, u16 position);  
+static s16 CIRCULAR_VECTOR_concat(CircularVector* vector, CircularVector* vector_src); 
+static s16 CIRCULAR_VECTOR_traverse(CircularVector* vector, void(*callback)(MemoryNode*)); 
+static void CIRCULAR_VECTOR_print(CircularVector* vector);
 
 struct circular_vector_ops_s vector_ops = { .destroy = CIRCULAR_VECTOR_destroy,
 								  .softReset = CIRCULAR_VECTOR_softReset,
