@@ -3,7 +3,7 @@
 // Algoritmos & Inteligencia Artificial
 // ESAT 2020-2021
 //
-//Test battery for memory_node
+//Test for memory_node
 
 #include <stdio.h>
 #include <stdlib.h>

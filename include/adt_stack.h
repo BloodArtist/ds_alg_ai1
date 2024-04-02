@@ -1,20 +1,26 @@
-// adt_stack.h
-// Escuela Superior de Arte y Tecnologia
-// Algoritmos & Inteligencia Artificial
-// ESAT 2020-2021
-//
+/**********************************************************************************
+* Copyright ***. All rights reserved.
+*
+* Contains all essential declaration functions required for the "Stack" data type
+*
+*
+*
+*
+* Code by Yossef Rubalcava & Davide Pietro
+* Code Maintained by Yossef R.
+**********************************************************************************/
 
 #ifndef __ADT_STACK_H__
 #define __ADT_STACK_H__ 1
 
 #include "adt_vector.h"
 /**
-* @brief Stack struct that contains all variables and callbacks
+* @brief Structure representing a Stack with variables and callbacks.
 */
 typedef struct adt_stack_s {
-  // @brief Vector pointer that will contain all information
+  // @brief Pointer that will contain all the information
 	Vector *storage_;
- // @brief stack_ops_s *ops_ Pointer to callbacks
+ // @brief Pointer to callbacks functions
 	struct stack_ops_s *ops_;
 } Stack;
 

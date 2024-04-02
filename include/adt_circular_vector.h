@@ -1,8 +1,14 @@
-// adt_vector.h
-// Escuela Superior de Arte y Tecnologia
-// Algoritmos & Inteligencia Artificial
-// ESAT 2020-2021
-//
+/**********************************************************************************
+* Copyright ***. All rights reserved.
+*
+* Contains all essential declaration functions required for the "Circular Vector" data type
+*
+*
+*
+*
+* Code by Yossef Rubalcava & Davide Pietro
+* Code Maintained by Yossef R.
+**********************************************************************************/
 
 #ifndef __ADT_CIRCULAR_VECTOR_H__
 #define __ADT_CIRCULAR_VECTOR_H__ 1
@@ -10,18 +16,18 @@
 #include "adt_memory_node.h"
 
 /**
-* @brief Vector struct that contains all variables and callbacks
+* @brief Structure representing a Vector with variables and callbacks.
 */
 typedef struct adt_circular_vector_s {
-  // @brief u16 head_ First element in the vector
+  // @brief First element in the vector
 	u16 head_;
- // @brief u16 tail_ Corresponds to the first free place of the vector
+ // @brief Corresponds to the first free place of the vector
 	u16 tail_; 
- // @brief u16 capacity Maximum length that the list can possibly have, cannot be 0
+ // @brief Maximum length that the list can possibly have, cannot be 0
 	u16 capacity_; 
- // @brief MemoryNode *storage_ Container of all elements of the vector
+ // @brief Container of all elements of the vector
 	MemoryNode *storage_;
- // @brief vector_ops_s *ops_ Pointer to callback 
+ // @brief Pointer to callback functions 
 	struct circular_vector_ops_s *ops_;
 } CircularVector;
 

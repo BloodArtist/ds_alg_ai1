@@ -1,8 +1,14 @@
-// adt_queue.h
-// Escuela Superior de Arte y Tecnologia
-// Algoritmos & Inteligencia Artificial
-// ESAT 2020-2021
-//
+/**********************************************************************************
+* Copyright ***. All rights reserved.
+*
+* Contains all essential declaration functions required for the "Queue" data type
+*
+*
+*
+*
+* Code by Yossef Rubalcava & Davide Pietro
+* Code Maintained by Yossef R.
+**********************************************************************************/
 
 #ifndef __ADT_QUEUE_H__
 #define __ADT_QUEUE_H__ 1
@@ -10,12 +16,12 @@
 #include "adt_list.h"
 
 /**
-* @brief Queue struct that contains all variables and callbacks
+* @brief Structure representing a Queue with variables and callbacks.
 */
 typedef struct adt_queue_s {
-  // @brief Queue pointer that will contain all information
+  // @brief Pointer that will contain all information
 	List* storage_;
-  // @brief queue_ops_s *ops_ Pointer to callbacks
+  // @brief Pointer to callbacks functions
 	struct queue_ops_s *ops_;
 } Queue;
 

@@ -1,8 +1,14 @@
-// adt_dllist.h
-// Escuela Superior de Arte y Tecnologia
-// Algoritmos & Inteligencia Artificial
-// ESAT 2020-2021
-//
+/**********************************************************************************
+* Copyright ***. All rights reserved.
+*
+* Contains all essential declaration functions required for the "Double List" data type
+*
+*
+*
+*
+* Code by Yossef Rubalcava & Davide Pietro
+* Code Maintained by Yossef R.
+**********************************************************************************/
 
 #ifndef __ADT_DLLIST_H__
 #define __ADT_DLLIST_H__ 1
@@ -10,18 +16,18 @@
 #include "adt_vector.h"
 
 /**
-* @brief Struct List which contains all variables and functions 
+* @brief Structure representing a DList with variables and callbacks.
 */
 typedef struct adt_dlist_s {
-  // @brief MemoryNode *head_ First node element of the list
+  // @brief First node element of the list
  MemoryNode *head_;
- // @brief MemoryNode *tail_ Corresponds to the first free place of the list
+  // @brief Corresponds to the first free place of the list
  MemoryNode *tail_;
- // @brief u16 capacity_ Maximum length that the list can possibly have, cannot be 0
+  // @brief Maximum length that the list can possibly have, cannot be 0
  u16 capacity_;
- // @brief u16 length_ Current number of elements in the list
+  // @brief Current number of elements in the list
  u16 length_;
- // @brief list_ops_s *ops_ Pointer to callback 
+  // @brief Pointer to callback functions
  struct dlist_ops_s *ops_;
 } DList;
 

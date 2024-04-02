@@ -11,13 +11,13 @@
 static s16 VECTOR_destroy(Vector* vector);            
 static s16 VECTOR_softReset(Vector* vector);          
 static s16 VECTOR_reset(Vector* vector);              
-static s16 VECTOR_resize(Vector* vector, u16 new_size)
+static s16 VECTOR_resize(Vector* vector, u16 new_size);
 static u16 VECTOR_capacity(Vector* vector);           
 static u16 VECTOR_length(Vector* vector);             
 static bool VECTOR_isEmpty(Vector* vector);
 static bool VECTOR_isFull(Vector* vector);
 static void* VECTOR_first(Vector* vector);
-static void* VECTOR_last(Vector* vector); /
+static void* VECTOR_last(Vector* vector); 
 static void* VECTOR_at(Vector* vector, u16 position);  
 static s16 VECTOR_insertFirst(Vector* vector, void* data, u16 bytes);           
 static s16 VECTOR_insertLast(Vector* vector, void* data, u16 bytes);            

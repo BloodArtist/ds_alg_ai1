@@ -76,12 +76,13 @@ solution("DS_ALG_AI1" .. _ACTION)
       --windowstargetplatformversion "10.0.16299.0"
       --windowstargetplatformversion "10.0.17134.0"
       --windowstargetplatformversion "10.0.17134.471"
-      --windowstargetplatformversion "10.0.17763.0"   --Clase
-        windowstargetplatformversion "10.0.19041.0"   --Davide
+        windowstargetplatformversion "10.0.17763.0"   
+      --windowstargetplatformversion "10.0.19041.0"  
 
 
     configuration "vs2019"
-      windowstargetplatformversion "10.0.18362.0"
+        windowstargetplatformversion "10.0.19041.0"
+      --windowstargetplatformversion "10.0.18362.0"
       --windowstargetplatformversion "10.0.17763.0"
       --windowstargetplatformversion "10.0.17134.0"
 

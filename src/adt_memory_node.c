@@ -15,10 +15,10 @@
 
 
 // Memory Node Declarations
-static s16 MEMNODE_initWithoutCheck(MemoryNode* node);	// inits a MN with no checks
-static void* MEMNODE_data(MemoryNode* node);	// returns a reference to data_
+static s16 MEMNODE_initWithoutCheck(MemoryNode* node);
+static void* MEMNODE_data(MemoryNode* node);	
 static s16 MEMNODE_setData(MemoryNode* node, void* src, u16 bytes);
-static u16 MEMNODE_size(MemoryNode* node);		// returns data size
+static u16 MEMNODE_size(MemoryNode* node);
 
 static MemoryNode* MEMNODE_getNext(MemoryNode *node);
 static u16 MEMNODE_setNext(MemoryNode* node, MemoryNode* next_node);

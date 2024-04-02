@@ -1,8 +1,14 @@
-// common_def.h
-// Escuela Superior de Arte y Tecnologia
-// Algoritmos & Inteligencia Artificial
-// ESAT 2020-2021
-//
+/**********************************************************************************
+* Copyright ***. All rights reserved.
+*
+* This header defines all the possible error types that the project may encounter
+*
+* It is utilize in every .c file
+*
+*
+* Code by Yossef Rubalcava & Davide Pietro
+* Code Maintained by Yossef R.
+**********************************************************************************/
 
 #ifndef __COMMON_DEF_H__
 #define __COMMON_DEF_H__
@@ -23,7 +29,7 @@ typedef enum
   kErrorCode_NullDoubleLPointer = -9,
   kErrorCode_NullStackPointer = -10,
   kErrorCode_NullQueuePointer = -11,
-	 kErrorCode_File = -20
+  kErrorCode_File = -20
 } ErrorCode;
 
 static const char* kErrorCodeText[] = {

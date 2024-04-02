@@ -74,7 +74,7 @@ List* LIST_create(u16 capacity) {
 
 s16 LIST_destroy(List* list) {
 	if (list == NULL) {
-		return kErrorCode_NullMemoryNode;
+		return kErrorCode_NullListPointer;
 	}
 	if (list->ops_->isEmpty(list)) {
 		MM->free(list);

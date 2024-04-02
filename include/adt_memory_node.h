@@ -1,8 +1,14 @@
-// adt_memory_node.h
-// Escuela Superior de Arte y Tecnologia
-// Algoritmos & Inteligencia Artificial
-// ESAT 2020-2021
-//
+/**********************************************************************************
+* Copyright ***. All rights reserved.
+*
+* Contains all essential declaration functions required for the "Node" data type
+*
+*
+*
+*
+* Code by Yossef Rubalcava & Davide Pietro
+* Code Maintained by Yossef R.
+**********************************************************************************/
 
 #ifndef __ADT_MEMORY_NODE_H__
 #define __ADT_MEMORY_NODE_H__ 1
@@ -10,18 +16,18 @@
 #include "ABGS_MemoryManager/abgs_platform_types.h"
 
 /**
-* @brief Memory Node struct that contains all variables and callbacks
+* @brief Structure representing a Node with variables and callbacks.
 */
 typedef struct memory_node_s {
-  // @brief void* data Contains the information stored in the node
+  // @brief Contains the information stored in the node
   void *data_;
-  // @brief u16 size_ Defines the size of the info
+  // @brief Defines the size of the info
   u16 size_;
-  // @brief memory_node_ops_s *ops_ Pointer to callbacks
+  // @brief Pointer to callbacks functions
   struct memory_node_ops_s *ops_;
-  // @brief memory_node_ops_s *next_ Pointer to the next node (List use only)
+  // @brief Pointer to the next node (List use only)
   struct memory_node_s *next_;
-  // @brief memory_node_ops_s *prev_ Pointer to the previous node (List use only)
+  // @brief Pointer to the previous node (List use only)
   struct memory_node_s *prev_;
 } MemoryNode;
 
